@@ -1,29 +1,28 @@
 
-# 🏥 MultiModel Prediction of In-Hospital Patient Mortality and Readmission Using NLP, Clinical-Bert LLM
+# 🏥 In-Hospital Mortality and Readmission Prediction Using Multimodal NLP and ClinicalBERT LLM
 
-
-This project builds an end-to-end machine learning pipeline to predict **in-hospital mortality** and **readmission** using structured data and unstructured **clinical notes** from the MIMIC-III dataset. Our pipeline integrates **ClinicalBERT embeddings**, optimized XGBoost/CatBoost best models, and comprehensive interpretability using **SHAP** to guide real-world healthcare decisions.
+An end-to-end machine learning pipeline is developed to predict in-hospital mortality and readmission using structured data and unstructured clinical notes from the MIMIC-III dataset. The system leverages ClinicalBERT embeddings, optimized XGBoost/CatBoost models, and SHAP interpretability to enable explainable healthcare predictions.
 
 ---
 
-## 📌 Table of Contents
+## 📌 Contents Overview
 
 - [Problem Statement](#problem-statement)
 - [Project Overview](#project-overview)
-- [Data Sources](#data-sources)
+- [Dataset](#data-sources)
 - [Methodology](#methodology)
-- [Model Performance](#model-performance)
-- [SHAP Interpretability](#shap-interpretability)
+- [Model Evaluation](#model-performance)
+- [Model Interpretability (SHAP)](#shap-interpretability)
 - [Streamlit Integration](#streamlit-integration)
-- [Folder Structure](#folder-structure)
-- [Installation & Usage](#installation--usage)
+- [Project Structure](#folder-structure)
+- [Setup and Usage](#installation--usage)
 - [Acknowledgements](#acknowledgements)
 
 ---
 
 ## ❗ Problem Statement
 
-Hospital readmissions and in-hospital deaths represent critical clinical outcomes affecting patient well-being and hospital performance. Early prediction of these events can help allocate care resources more efficiently.
+Hospital readmissions and in-hospital deaths are significant clinical outcomes that affect patient health and hospital performance metrics. Early prediction of these events can help improve the efficiency of care resource allocation.
 
 ---
 
@@ -87,9 +86,9 @@ Hospital readmissions and in-hospital deaths represent critical clinical outcome
 
 ## 🌟 SHAP Interpretability
 
-- SHAP values identified **ventilator use**, **sepsis**, and **admission source** as top mortality predictors.
-- Readmission models highlighted **LOS**, **procedure count**, and **embedding features** from discharge summaries.
-- Included both **bar plots** and **interaction visualizations** to aid clinical explainability.
+- SHAP values highlighted ventilator use, sepsis, and admission source as dominant mortality predictors.
+- Readmission prediction relied heavily on LOS, procedure count, and discharge-summary embeddings.
+- Bar plots and interaction visualizations were used to improve clinical explainability.
 
 ---
 
